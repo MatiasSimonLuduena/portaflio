@@ -1,0 +1,131 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  z-index: 1;
+}
+.navbar .logo {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar .menu button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin: 0 12px;
+  font-size: 0.9em;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.navbar .menu button:hover {
+  border-bottom: 1px solid #fff;
+}
+@media (max-width: 620px) {
+  .navbar .menu {
+    display: none;
+  }
+}
+.navbar .button_menu-burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-sizing: content-box;
+  border-radius: 5px;
+  display: none;
+}
+.navbar .button_menu-burger:hover {
+  background-color: rgb(56, 56, 56);
+}
+.navbar .button_menu-burger svg {
+  font-size: 1.4em;
+  color: #fff;
+}
+@media (max-width: 620px) {
+  .navbar .button_menu-burger {
+    display: block;
+  }
+}
+
+.container_menu-burger {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  pointer-events: none;
+  z-index: 2;
+}
+.container_menu-burger .menu-burger {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: black;
+  flex-direction: column;
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container_menu-burger .menu-burger button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  margin: 5px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+.container_menu-burger .menu-burger button:hover {
+  border-bottom: 1px solid #fff;
+}
+.container_menu-burger .menu-burger svg {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2em;
+}
+@media (max-width: 620px) {
+  .container_menu-burger .menu-burger {
+    display: flex;
+  }
+}
+
+/* DRAWER */
+.menu-left {
+  animation: nameLeft 0.6s forwards;
+}
+@keyframes nameLeft {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0;
+    pointer-events: all;
+  }
+}
+
+.menu-right {
+  animation: nameRight 0.6s forwards;
+}
+@keyframes nameRight {
+  from {
+    right: 0;
+  }
+  to {
+    right: -300px;
+    pointer-events: none;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
