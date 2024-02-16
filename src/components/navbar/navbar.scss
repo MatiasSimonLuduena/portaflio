@@ -1,13 +1,17 @@
 .navbar {
   width: 100%;
   height: auto;
-  background-color: black;
+  background-color: rgb(35, 35, 35);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
   z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   .logo {
     font-size: 1em;
@@ -74,12 +78,13 @@
     width: 100%;
     max-width: 300px;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     flex-direction: column;
     padding-top: 50px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     button {
       background-color: transparent;
@@ -112,25 +117,25 @@
 
 /* DRAWER */
 .menu-left {
-  animation: nameLeft .6s forwards;
+  animation: nameLeft 0.6s forwards;
 
   @keyframes nameLeft {
     from {
       right: -300px;
     }
     to {
-      right: 0;
+      right: 15px;
       pointer-events: all;
     }
   }
 }
 
 .menu-right {
-  animation: nameRight .6s forwards;
+  animation: nameRight 0.6s forwards;
 
   @keyframes nameRight {
     from {
-      right: 0;
+      right: 15px;
     }
     to {
       right: -300px;
