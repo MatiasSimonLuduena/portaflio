@@ -1,0 +1,148 @@
+.projects {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(35, 35, 35);
+  color: #fff;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  .projects-present {
+    flex: 3;
+
+    h3 {
+      font-size: 1.7em;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .projects-line {
+      width: 150px;
+      height: 2px;
+      background: linear-gradient(
+        to left,
+        rgb(156, 223, 0) 0%,
+        rgb(123, 230, 0) 100%
+      );
+      margin: 7px 0 18px;
+    }
+
+    p {
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      color: #cfcfcf;
+      font-size: 1em;
+      margin-top: 20px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-weight: 600;
+
+      .button-line {
+        width: 100%;
+        height: 1.5px;
+        background: linear-gradient(
+          to left,
+          rgb(190, 223, 0) 0%,
+          rgb(27, 230, 0) 100%
+        );
+        margin-top: 5px;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        color: #fff;
+
+        .button-line {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .all-projects {
+    flex: 1;
+
+    h3 {
+      font-size: 1.3em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .list-projects {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+      li {
+        margin: 10px 5px;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        color: #cfcfcf;
+
+        .li-line {
+          width: 100%;
+          height: 1.5px;
+          background: linear-gradient(
+            to left,
+            rgb(190, 223, 0) 0%,
+            rgb(27, 230, 0) 100%
+          );
+          margin-top: 5px;
+          opacity: 0;
+          transition: all 0.2s;
+        }
+
+        &:hover {
+          color: #fff;
+
+          .li-line {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    padding: 0 10%;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 5%;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    .projects-present {
+      flex: none;
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+
+    .all-projects {
+      flex: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+  }
+}
