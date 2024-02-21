@@ -1,0 +1,89 @@
+.about {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: rgb(35, 35, 35);
+  color: #fff;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .about-container {
+    display: flex;
+    gap: 100px;
+
+    .about-me {
+      flex: 2;
+
+      span {
+        font-size: 1.2em;
+        margin: 25px 5px;
+      }
+      p {
+        margin: 10px 0;
+        font-size: 0.95em;
+        letter-spacing: 0.5px;
+        line-height: 1.65em;
+      }
+    }
+
+    .about-skills {
+      flex: 1;
+
+      span {
+        font-size: 1.2em;
+        margin: 25px 5px;
+      }
+
+      .list-skills {
+        h6 {
+          font-size: 1em;
+          margin: 20px 0 10px;
+        }
+
+        img {
+          width: 40px;
+          height: auto;
+          margin: 0 8px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    padding: 0 10%;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 5%;
+  }
+
+  @media (max-width: 800px) {
+    h3 {
+      font-size: 1.3em;
+      margin-top: 75px;
+    }
+
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+
+      .about-skills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
