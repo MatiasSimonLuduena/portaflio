@@ -16,7 +16,8 @@ const Home = () => {
           currently 22 years old and I have been making web applications since I
           was 19 years.
           <br />
-          <br />I have developed many types of websites...
+          <br />
+          I have developed many types of websites from landing pages to web platforms and I know how to correctly handle various types of development technologies from Redux on the frontend to JsonWebTokens on the backend.
         </p>
       </div>
     </div>

@@ -8,13 +8,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .about h3 {
   font-size: 1.5em;
   font-weight: 400;
-  margin-bottom: 35px;
-  text-align: center;
+  letter-spacing: 0.5px;
+}
+.about .projects-line {
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to left, rgb(156, 223, 0) 0%, rgb(123, 230, 0) 100%);
+  margin: 7px 0 25px;
 }
 .about .about-container {
   display: flex;
@@ -68,17 +72,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
   }
   .about .about-container .about-skills {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+  .about .about-container .about-skills span {
+    margin: 20px 5px 5px;
+  }
 }
 @media (max-width: 800px) {
   .about {
-    padding: 0 5%;
+    padding: 5%;
   }
 }
 

@@ -103,6 +103,7 @@
 @media (max-width: 900px) {
   .projects {
     flex-direction: column;
+    gap: 50px;
   }
   .projects .projects-present {
     flex: none;

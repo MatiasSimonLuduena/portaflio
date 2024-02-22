@@ -32,7 +32,7 @@ const Contact = () => {
               <img key={i} alt={item.title} src={item.image} />
             ))}
           </div>
-          <p className='contact-email'>matiassimonluduena@gmail.com</p>
+          <p className="contact-email">matiassimonluduena@gmail.com</p>
         </div>
       </div>
     </div>
