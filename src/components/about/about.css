@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: rgb(35, 35, 35);
   color: #fff;
-  padding: 0 20%;
+  padding: 0 15% 0 calc(10% + 150px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,19 +47,19 @@
 .about .about-container .about-skills .list-skills img {
   width: 40px;
   height: auto;
-  margin: 0 8px;
+  margin: 5px 8px;
 }
 @media (max-width: 1300px) {
   .about {
-    padding: 0 10%;
+    padding: 0 10% 0 calc(10% + 150px);
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .about {
-    padding: 0 5%;
+    padding: 0 5% 0 calc(5% + 150px);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
   .about h3 {
     font-size: 1.3em;
     margin-top: 75px;
@@ -74,6 +74,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .about {
+    padding: 0 5%;
   }
 }
 

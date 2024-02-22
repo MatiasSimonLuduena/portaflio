@@ -13,9 +13,22 @@ const Navbar = () => {
       <nav className="navbar">
         <span className="logo">Matías Simón Ludueña</span>
         <div className="menu">
-          <button>Home</button>
-          <button>Projects</button>
-          <button>Contact me</button>
+          <button>
+            Home
+            <div className='button-line'></div>
+          </button>
+          <button>
+            Projects
+            <div className='button-line'></div>
+          </button>
+          <button>
+            About me
+            <div className='button-line'></div>
+          </button>
+          <button>
+            Contact me
+            <div className='button-line'></div>
+          </button>
         </div>
         <button
           className="button_menu-burger"
@@ -32,9 +45,22 @@ const Navbar = () => {
       >
         <div className="menu-burger" onClick={(e) => e.stopPropagation()}>
           <FontAwesomeIcon icon={faX} onClick={() => setDrawer('right')} />
-          <button>Home</button>
-          <button>Projects</button>
-          <button>Contact me</button>
+          <button>
+            Home
+            <div className='button-line'></div>
+          </button>
+          <button>
+            Projects
+            <div className='button-line'></div>
+          </button>
+          <button>
+            About me
+            <div className='button-line'></div>
+          </button>
+          <button>
+            Contact me
+            <div className='button-line'></div>
+          </button>
         </div>
       </div>
     </>

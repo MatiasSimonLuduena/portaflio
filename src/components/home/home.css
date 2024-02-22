@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 0 20%;
+  padding: 0 15% 0 calc(10% + 150px);
 }
 .home .home-top {
   margin: 25px 0;
@@ -34,7 +34,7 @@
 }
 @media (max-width: 1100px) {
   .home {
-    padding: 0 10%;
+    padding: 0 10% 0 calc(10% + 150px);
   }
 }
 @media (max-width: 800px) {

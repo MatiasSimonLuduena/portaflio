@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20%;
+  padding: 0 15% 0 calc(10% + 150px);
 }
 .contact h3 {
   font-size: 1.5em;
@@ -36,41 +36,34 @@
 .contact .contact-container .contact-form form {
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px 20px 25px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 5px;
 }
 .contact .contact-container .contact-form form input {
-  background-color: #fff;
-  height: 35px;
-  padding: 3px 7px;
-  line-height: normal;
-  border: 1px solid #a6a6a6;
-  border-top-color: #949494;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(0, 0, 0, 0.07) inset;
-  outline: 0;
-  color: #111;
-  font-size: 13px;
-  margin: 4px 0;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #858585;
+  border-radius: 5px 5px 0 0;
+  background-color: transparent;
+  color: #fff;
 }
 .contact .contact-container .contact-form form textarea {
-  background-color: #fff;
-  height: 75px;
-  padding: 3px 7px;
-  line-height: normal;
-  border: 1px solid #a6a6a6;
-  border-top-color: #949494;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(0, 0, 0, 0.07) inset;
-  outline: 0;
-  color: #111;
-  font-size: 13px;
-  margin: 4px 0;
+  height: 70px;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #858585;
+  border-radius: 5px 5px 0 0;
+  background-color: transparent;
+  color: #fff;
 }
 .contact .contact-container .contact-form button {
   border: none;
   background-color: transparent;
   color: #cfcfcf;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 25px;
   letter-spacing: 1px;
   cursor: pointer;
   font-weight: 600;
@@ -129,15 +122,15 @@
 }
 @media (max-width: 1300px) {
   .contact {
-    padding: 0 10%;
+    padding: 0 10% 0 calc(10% + 150px);
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .contact {
-    padding: 0 5%;
+    padding: 0 5% 0 calc(5% + 150px);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .contact h3 {
     font-size: 1.3em;
   }
@@ -150,6 +143,11 @@
     flex: none;
     width: 100%;
     max-width: 450px;
+  }
+}
+@media (max-width: 800px) {
+  .contact {
+    padding: 0 5%;
   }
 }
 

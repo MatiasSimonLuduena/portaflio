@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: rgb(35, 35, 35);
   color: #fff;
-  padding: 0 20%;
+  padding: 0 15% 0 calc(10% + 150px);
   display: flex;
   align-items: center;
   gap: 100px;
@@ -118,14 +118,14 @@
   }
 
   @media (max-width: 1300px) {
-    padding: 0 10%;
+    padding: 0 10% 0 calc(10% + 150px);
   }
 
   @media (max-width: 1000px) {
-    padding: 0 5%;
+    padding: 0 5% 0 calc(5% + 150px);
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     flex-direction: column;
 
     .projects-present {
@@ -144,5 +144,9 @@
       justify-content: center;
       align-items: start;
     }
+  }
+
+  @media (max-width: 800px) {
+    padding: 0 5%;
   }
 }
