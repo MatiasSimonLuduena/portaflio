@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './contact.css';
 
 const socialsmedia = [
@@ -7,9 +8,9 @@ const socialsmedia = [
   { title: 'GitHub', image: 'icons/github.png' },
 ];
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   return (
-    <div className="contact">
+    <div className="contact" ref={contactRef}>
       <h3>Do you want to contact me?</h3>
       <div className="contact-container">
         <div className="contact-form">

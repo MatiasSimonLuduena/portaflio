@@ -34,11 +34,14 @@
 }
 .navbar .menu button .button-line {
   width: 100%;
-  height: 1.5px;
+  height: 2px;
   background: linear-gradient(to left, rgb(190, 223, 0) 0%, rgb(27, 230, 0) 100%);
   margin-top: 5px;
   opacity: 0;
   transition: all 0.2s;
+}
+.navbar .menu button .opacity1 {
+  opacity: 1 !important;
 }
 .navbar .menu button:hover {
   color: #fff;

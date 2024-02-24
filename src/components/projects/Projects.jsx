@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import "./projects.css"
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
   return (
-    <div className="projects">
+    <div className="projects" ref={projectsRef}>
       <div className="projects-present">
         <h3>Project name</h3>
         <div className="projects-line"></div>

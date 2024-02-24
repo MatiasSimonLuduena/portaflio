@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './about.css';
 
 const skillsFront = [
@@ -19,9 +20,9 @@ const skillsLangs = [
   { name: 'Git', image: 'svg/git.svg' },
 ];
 
-const About = () => {
+const About = ({ aboutRef }) => {
   return (
-    <div className="about">
+    <div className="about" ref={aboutRef}>
       <h3>About me and my jobs</h3>
       <div className="projects-line"></div>
       <div className='about-container'>

@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import './home.css';
 
-const Home = () => {
+const Home = ({ homeRef }) => {
   return (
-    <div className="home">
+    <div className="home" ref={homeRef}>
       <div className="home-top">
         <h1>Matias Simon Ludueña</h1>
         <div className="home-top_line"></div>

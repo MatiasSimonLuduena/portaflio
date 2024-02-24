@@ -33,7 +33,7 @@
 
       .button-line {
         width: 100%;
-        height: 1.5px;
+        height: 2px;
         background: linear-gradient(
           to left,
           rgb(190, 223, 0) 0%,
@@ -42,6 +42,10 @@
         margin-top: 5px;
         opacity: 0;
         transition: all 0.2s;
+      }
+
+      .opacity1 {
+        opacity: 1 !important;
       }
 
       &:hover {
